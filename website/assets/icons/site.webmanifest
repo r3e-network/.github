@@ -1,0 +1,26 @@
+{
+    "name": "R3E Labs - Neo Blockchain Infrastructure",
+    "short_name": "R3E Labs",
+    "description": "Building the future of Neo blockchain infrastructure with TEE, AI, ZK, and Rust",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#0a0e1a",
+    "theme_color": "#00ff88",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "categories": ["blockchain", "technology", "developer tools"],
+    "lang": "en",
+    "scope": "/",
+    "prefer_related_applications": false
+} 

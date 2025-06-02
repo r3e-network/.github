@@ -1,0 +1,70 @@
+{
+  "name": "r3e-network-website",
+  "version": "1.0.0",
+  "description": "Professional organization website for R3E Labs showcasing Neo blockchain infrastructure",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python3 -m http.server 8000",
+    "dev-win": "python -m http.server 8000",
+    "dev-node": "npx http-server -p 8000 -c-1",
+    "build": "npm run optimize",
+    "optimize": "npm run create-dist && npm run minify-css && npm run minify-js && npm run copy-assets",
+    "create-dist": "mkdir -p dist && cp index.html dist/",
+    "minify-css": "cleancss -o dist/styles.min.css styles.css",
+    "minify-js": "terser script.js -o dist/script.min.js",
+    "copy-assets": "cp -r docs dist/ 2>/dev/null || true",
+    "clean": "rm -rf dist",
+    "test": "npm run test-html && npm run test-performance",
+    "test-html": "echo 'Running HTML validation...' && curl -H 'Content-Type: text/html; charset=utf-8' --data-binary @index.html https://validator.w3.org/nu/?out=text || true",
+    "test-performance": "echo 'Testing local performance...' && curl -o /dev/null -s -w 'Total time: %{time_total}s\\nSize: %{size_download} bytes\\n' http://localhost:8000/ || echo 'Start dev server first'",
+    "deploy-netlify": "netlify deploy --prod --dir=dist",
+    "deploy-vercel": "vercel --prod",
+    "lint": "echo 'Running basic file checks...' && ls -la index.html styles.css script.js",
+    "validate": "npm run lint && npm run test-html",
+    "start": "npm run dev",
+    "prebuild": "npm run clean",
+    "postbuild": "echo 'Build complete! Files ready in dist/ directory'",
+    "help": "echo 'Available commands:\\n  npm run dev - Start development server\\n  npm run build - Build optimized version\\n  npm run deploy-netlify - Deploy to Netlify\\n  npm run test - Run validation tests'"
+  },
+  "keywords": [
+    "r3e-labs",
+    "neo-blockchain",
+    "website",
+    "tee",
+    "ai",
+    "zero-knowledge",
+    "rust",
+    "blockchain-infrastructure"
+  ],
+  "author": "R3E Labs <jimmy@r3e.network>",
+  "license": "MIT",
+  "homepage": "https://r3e.network",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/r3e-network/website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/r3e-network/website/issues"
+  },
+  "devDependencies": {
+    "clean-css-cli": "^5.6.2",
+    "terser": "^5.19.2",
+    "netlify-cli": "^15.8.0",
+    "http-server": "^14.1.1"
+  },
+  "optionalDependencies": {
+    "vercel": "^32.5.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ],
+  "config": {
+    "port": "8000"
+  }
+} 

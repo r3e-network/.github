@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Simplified R3E logo for favicon use -->
+  <!-- Dark background for contrast -->
+  <rect width="512" height="512" fill="#0a0e1a"/>
+  
+  <!-- Simplified geometric shapes using brand colors -->
+  <g transform="translate(128, 180) scale(0.6)">
+    <!-- Layer 1 - Primary green -->
+    <polygon fill="#00ff88" points="150 50 50 110 50 160 150 100"/>
+    
+    <!-- Layer 2 - Cyan accent -->
+    <polygon fill="#00d9ff" points="160 160 260 100 260 50 160 110 150 118 50 178 50 228 150 168 160 160"/>
+    
+    <!-- Layer 3 - Mixed gradient effect -->
+    <polygon fill="#00ff88" opacity="0.8" points="270 110 160 178 150 186 50 246 50 296 150 236 160 228 260 168 270 160 370 100 370 50 270 110"/>
+    
+    <!-- Layer 4 - Depth effect -->
+    <polygon fill="#00d9ff" opacity="0.6" points="270 178 160 246 160 296 260 236 270 228 370 168 370 118 270 178"/>
+    
+    <!-- Layer 5 - Final layer -->
+    <polygon fill="#00ff88" opacity="0.4" points="270 246 270 296 370 236 370 186 270 246"/>
+  </g>
+</svg> 

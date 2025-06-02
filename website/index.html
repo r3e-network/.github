@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R3E Labs - Building the Future of Neo Blockchain Infrastructure</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="R3E Labs leverages TEE, AI, ZK, and Rust to create powerful Neo infrastructures, connecting Web3 dApps to Web2 computing power and data.">
+    <meta name="keywords" content="Neo blockchain, TEE, AI, Zero Knowledge, Rust, smart contracts, Web3, blockchain infrastructure">
+    <meta name="author" content="R3E Labs">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="R3E Labs - Neo Blockchain Infrastructure">
+    <meta property="og:description" content="Building the future of Neo blockchain infrastructure with TEE, AI, ZK, and Rust">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://r3e.network">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="R3E Labs - Neo Blockchain Infrastructure">
+    <meta name="twitter:description" content="Building the future of Neo blockchain infrastructure with TEE, AI, ZK, and Rust">
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "R3E Labs",
+      "url": "https://r3e.network",
+      "logo": "https://r3e.network/favicon.ico",
+      "description": "R3E Labs leverages TEE, AI, ZK, and Rust to create powerful Neo infrastructures, connecting Web3 dApps to Web2 computing power and data.",
+      "founder": {
+        "@type": "Person",
+        "name": "R3E Labs Team"
+      },
+      "sameAs": [
+        "https://github.com/r3e-network"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "",
+        "contactType": "customer service",
+        "email": "jimmy@r3e.network"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "US"
+      }
+    }
+    </script>
+    
+    <!-- Favicons & App Icons -->
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/icons/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/icons/android-chrome-512x512.png">
+    <link rel="manifest" href="assets/icons/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#00ff88">
+    <meta name="theme-color" content="#0a0e1a">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Feather Icons -->
+    <link rel="stylesheet" href="https://unpkg.com/feather-icons@4.28.0/dist/feather.css">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home" class="nav-logo-link">
+                    <span class="logo-text">R3E</span>
+                    <span class="logo-labs">Labs</span>
+                </a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#mission" class="nav-link">Mission</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#technologies" class="nav-link">Technologies</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#community" class="nav-link">Community</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-text">🚀 Pioneering the Future</span>
+                </div>
+                <h1 class="hero-title">
+                    Next-Generation<br>
+                    <span class="gradient-text">Neo Infrastructure</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Unlock the power of <strong>TEE</strong>, <strong>AI</strong>, <strong>ZK</strong>, and <strong>Rust</strong> to revolutionize blockchain development. 
+                    R3E Labs bridges Web3 innovation with enterprise-grade Web2 infrastructure, delivering unparalleled security, performance, and scalability.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">4</span>
+                        <span class="stat-label">Core Projects</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">34+</span>
+                        <span class="stat-label">MCP Tools</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Open Source</span>
+                    </div>
+                </div>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">
+                        <i data-feather="arrow-right"></i>
+                        Explore Our Solutions
+                    </a>
+                    <a href="https://github.com/r3e-network" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+                        <i data-feather="github"></i>
+                        View on GitHub
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-elements">
+                    <div class="floating-element floating-element-1"></div>
+                    <div class="floating-element floating-element-2"></div>
+                    <div class="floating-element floating-element-3"></div>
+                    <div class="floating-element floating-element-4"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section id="mission" class="mission">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Mission</h2>
+                <p class="section-subtitle">
+                    Bridging the gap between Web3 innovation and Web2 computing power
+                </p>
+            </div>
+            <div class="mission-content">
+                <div class="mission-text">
+                    <p class="mission-description">
+                        R3E Labs is dedicated to leveraging the power of <strong>TEE (Trusted Execution Environment)</strong>, 
+                        <strong>AI</strong>, <strong>ZK (Zero-Knowledge)</strong>, and <strong>Rust</strong> to create powerful 
+                        Neo infrastructures that empower the Neo network and seamlessly connect Neo Web3 dApps to Web2 
+                        computing power and data.
+                    </p>
+                    <div class="mission-highlights">
+                        <div class="highlight-item">
+                            <i data-feather="shield" class="highlight-icon"></i>
+                            <div class="highlight-content">
+                                <h3>Security First</h3>
+                                <p>Intel SGX with Occlum LibOS for maximum security and privacy</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i data-feather="zap" class="highlight-icon"></i>
+                            <div class="highlight-content">
+                                <h3>High Performance</h3>
+                                <p>Rust-powered solutions for optimal speed and memory safety</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i data-feather="link" class="highlight-icon"></i>
+                            <div class="highlight-content">
+                                <h3>Seamless Integration</h3>
+                                <p>Connecting Web3 innovation with Web2 infrastructure</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section id="technologies" class="technologies">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Core Technologies</h2>
+                <p class="section-subtitle">
+                    Cutting-edge technologies powering the next generation of blockchain infrastructure
+                </p>
+            </div>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i data-feather="lock"></i>
+                    </div>
+                    <h3 class="tech-title">TEE</h3>
+                    <p class="tech-subtitle">Trusted Execution Environment</p>
+                    <p class="tech-description">
+                        Intel SGX with Occlum LibOS for secure execution of critical operations, 
+                        ensuring maximum security and privacy for sensitive computations.
+                    </p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i data-feather="cpu"></i>
+                    </div>
+                    <h3 class="tech-title">AI</h3>
+                    <p class="tech-subtitle">Artificial Intelligence</p>
+                    <p class="tech-description">
+                        Machine learning and prediction capabilities integrated into blockchain services 
+                        for intelligent automation and enhanced decision-making.
+                    </p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i data-feather="eye-off"></i>
+                    </div>
+                    <h3 class="tech-title">ZK</h3>
+                    <p class="tech-subtitle">Zero-Knowledge</p>
+                    <p class="tech-description">
+                        Privacy-preserving computations using zk-SNARKs, zk-STARKs, and other 
+                        zero-knowledge proof systems for enhanced privacy.
+                    </p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i data-feather="settings"></i>
+                    </div>
+                    <h3 class="tech-title">Rust</h3>
+                    <p class="tech-subtitle">Systems Programming</p>
+                    <p class="tech-description">
+                        High-performance, memory-safe systems programming language ensuring 
+                        reliability and efficiency in all our infrastructure components.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Key Projects</h2>
+                <p class="section-subtitle">
+                    Comprehensive tools and infrastructure for the Neo blockchain ecosystem
+                </p>
+            </div>
+            <div class="projects-grid">
+                <!-- Neo N3 MCP Server -->
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i data-feather="server"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://neomcp.xyz" target="_blank" rel="noopener noreferrer" class="project-link">
+                                <i data-feather="external-link"></i>
+                            </a>
+                            <a href="https://github.com/r3e-network/neo-n3-mcp" target="_blank" rel="noopener noreferrer" class="project-link">
+                                <i data-feather="github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Neo N3 MCP Server</h3>
+                    <p class="project-subtitle">Model Context Protocol Integration</p>
+                    <p class="project-description">
+                        An MCP server providing 34 tools and 9 resources for comprehensive Neo N3 blockchain 
+                        interaction. Features network management, wallet operations, smart contract interactions, 
+                        and blockchain data querying with security-first design.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">TypeScript</span>
+                        <span class="tag">MCP</span>
+                        <span class="tag">Neo N3</span>
+                        <span class="tag">Blockchain</span>
+                    </div>
+                </div>
+
+                <!-- Neo Rust Smart Contract DevPack -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i data-feather="code"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://neo-rust.netlify.app" target="_blank" rel="noopener noreferrer" class="project-link">
+                                <i data-feather="external-link"></i>
+                            </a>
+                            <a href="https://github.com/r3e-network/neo-contract-rs" target="_blank" rel="noopener noreferrer" class="project-link">
+                                <i data-feather="github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Neo Rust Smart Contract DevPack</h3>
+                    <p class="project-subtitle">Write Neo N3 Smart Contracts in Rust</p>
+                    <p class="project-description">
+                        Enable developers to write Neo N3 smart contracts using Rust, bringing memory safety 
+                        and performance to Neo blockchain development with familiar syntax and comprehensive 
+                        development toolkit.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Rust</span>
+                        <span class="tag">Smart Contracts</span>
+                        <span class="tag">Neo N3</span>
+                        <span class="tag">DevTools</span>
+                    </div>
+                </div>
+
+                <!-- Neo Rust SDK -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i data-feather="package"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://neorust.netlify.app" target="_blank" rel="noopener noreferrer" class="project-link">
+                                <i data-feather="external-link"></i>
+                            </a>
+                            <a href="https://github.com/r3e-network/NeoRust" target="_blank" rel="noopener noreferrer" class="project-link">
+                                <i data-feather="github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Neo Rust SDK</h3>
+                    <p class="project-subtitle">Comprehensive Neo N3 and Neo X SDK</p>
+                    <p class="project-description">
+                        A powerful SDK for interacting with both Neo N3 and Neo X blockchains using Rust. 
+                        Features multi-blockchain support, type-safe interactions, high-performance RPC client, 
+                        and comprehensive wallet management.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Rust</span>
+                        <span class="tag">SDK</span>
+                        <span class="tag">Neo N3</span>
+                        <span class="tag">Neo X</span>
+                    </div>
+                </div>
+
+                <!-- Neo Service Layer -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i data-feather="layers"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/r3e-network/neo-service-layer" target="_blank" rel="noopener noreferrer" class="project-link">
+                                <i data-feather="github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Neo Service Layer</h3>
+                    <p class="project-subtitle">Comprehensive Secure Services Platform</p>
+                    <p class="project-description">
+                        Oracle services and critical infrastructure using Intel SGX with Occlum LibOS enclaves. 
+                        Includes randomness, oracle, data feeds, key management, compute, storage, compliance, 
+                        and advanced AI-powered services.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">C#</span>
+                        <span class="tag">Intel SGX</span>
+                        <span class="tag">Oracle</span>
+                        <span class="tag">Infrastructure</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof Section -->
+    <section id="community" class="community">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Trusted by Developers</h2>
+                <p class="section-subtitle">
+                    Join the growing community building the future of Neo blockchain infrastructure
+                </p>
+            </div>
+            <div class="community-stats">
+                <div class="community-stat" data-aos="fade-up">
+                    <div class="stat-icon">
+                        <i data-feather="star"></i>
+                    </div>
+                    <h3 class="stat-title">Open Source</h3>
+                    <p class="stat-description">All projects are open source and community-driven, fostering innovation and collaboration</p>
+                </div>
+                <div class="community-stat" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-icon">
+                        <i data-feather="users"></i>
+                    </div>
+                    <h3 class="stat-title">Developer Community</h3>
+                    <p class="stat-description">Growing ecosystem of developers building with our tools and contributing to the platform</p>
+                </div>
+                <div class="community-stat" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-icon">
+                        <i data-feather="shield-check"></i>
+                    </div>
+                    <h3 class="stat-title">Enterprise Ready</h3>
+                    <p class="stat-description">Production-grade security and performance for enterprise blockchain applications</p>
+                </div>
+            </div>
+            <div class="testimonials">
+                <div class="testimonial-card" data-aos="fade-up">
+                    <div class="quote-icon">
+                        <i data-feather="quote"></i>
+                    </div>
+                    <blockquote class="testimonial-text">
+                        "R3E Labs' approach to integrating TEE and ZK technologies with Neo blockchain infrastructure represents a significant advancement in secure, scalable blockchain development."
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <strong>Neo Ecosystem Developer</strong>
+                        <span>Blockchain Innovation</span>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="quote-icon">
+                        <i data-feather="quote"></i>
+                    </div>
+                    <blockquote class="testimonial-text">
+                        "The Neo Rust SDK has revolutionized our development process, providing type-safe blockchain interactions with exceptional performance and reliability."
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <strong>Blockchain Developer</strong>
+                        <span>DeFi Platform</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Architecture Section -->
+    <section id="architecture" class="architecture">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">System Architecture</h2>
+                <p class="section-subtitle">
+                    Modular, security-first architecture powering the Neo ecosystem
+                </p>
+            </div>
+            <div class="architecture-diagram">
+                <div class="arch-layer arch-layer-1">
+                    <h3>Client Applications</h3>
+                    <p>Web3 dApps, Mobile Apps, Desktop Applications</p>
+                </div>
+                <div class="arch-layer arch-layer-2">
+                    <h3>API Layer</h3>
+                    <p>RESTful APIs, GraphQL, WebSocket Connections</p>
+                </div>
+                <div class="arch-layer arch-layer-3">
+                    <h3>Service Framework</h3>
+                    <p>Oracle Services, Data Feeds, Automation, Cross-Chain</p>
+                </div>
+                <div class="arch-layer arch-layer-4">
+                    <h3>Intel SGX + Occlum LibOS</h3>
+                    <p>Trusted Execution Environment for Secure Operations</p>
+                </div>
+                <div class="arch-layer arch-layer-5">
+                    <h3>Neo N3 & Neo X Integration</h3>
+                    <p>Blockchain Connectivity and Transaction Processing</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">
+                    Ready to build the future of blockchain infrastructure together?
+                </p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i data-feather="mail"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <a href="mailto:jimmy@r3e.network">jimmy@r3e.network</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i data-feather="github"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>GitHub</h3>
+                            <a href="https://github.com/r3e-network" target="_blank" rel="noopener noreferrer">r3e-network</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i data-feather="globe"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Website</h3>
+                            <a href="https://r3e.network">r3e.network</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm" class="form">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" id="name" name="name" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" name="message" class="form-textarea" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i data-feather="send"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-text">R3E</span>
+                        <span class="logo-labs">Labs</span>
+                    </div>
+                    <p class="footer-description">
+                        Building the future of Neo blockchain infrastructure with security, privacy, and performance at its core.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://github.com/r3e-network" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <i data-feather="github"></i>
+                        </a>
+                        <a href="mailto:jimmy@r3e.network" class="social-link">
+                            <i data-feather="mail"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Projects</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://neomcp.xyz" target="_blank" rel="noopener noreferrer">Neo N3 MCP Server</a></li>
+                        <li><a href="https://neo-rust.netlify.app" target="_blank" rel="noopener noreferrer">Neo Rust DevPack</a></li>
+                        <li><a href="https://neorust.netlify.app" target="_blank" rel="noopener noreferrer">Neo Rust SDK</a></li>
+                        <li><a href="https://github.com/r3e-network/neo-service-layer" target="_blank" rel="noopener noreferrer">Neo Service Layer</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Technologies</h3>
+                    <ul class="footer-links">
+                        <li><a href="#technologies">TEE (Intel SGX)</a></li>
+                        <li><a href="#technologies">Artificial Intelligence</a></li>
+                        <li><a href="#technologies">Zero-Knowledge Proofs</a></li>
+                        <li><a href="#technologies">Rust Programming</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="#mission">Mission</a></li>
+                        <li><a href="#architecture">Architecture</a></li>
+                        <li><a href="https://github.com/r3e-network" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 R3E Labs. All rights reserved. Powered by TEE, AI, ZK, and Rust 🦀</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="script.js"></script>
+
+    <!-- Google Analytics (Placeholder - Replace GA_MEASUREMENT_ID with actual ID) -->
+    <!-- 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+    -->
+</body>
+</html> 

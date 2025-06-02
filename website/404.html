@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | R3E Labs</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Page not found - R3E Labs">
+    <meta name="robots" content="noindex, nofollow">
+    
+    <!-- Favicons & App Icons -->
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/icons/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/icons/android-chrome-512x512.png">
+    <link rel="manifest" href="assets/icons/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#00ff88">
+    <meta name="theme-color" content="#0a0e1a">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Feather Icons -->
+    <link rel="stylesheet" href="https://unpkg.com/feather-icons@4.28.0/dist/feather.css">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+        .error-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: 
+                radial-gradient(ellipse at 30% 70%, rgba(0, 255, 136, 0.1) 0%, transparent 50%),
+                radial-gradient(ellipse at 70% 30%, rgba(0, 217, 255, 0.1) 0%, transparent 50%),
+                var(--dark-bg);
+            padding: 2rem;
+        }
+        
+        .error-content {
+            text-align: center;
+            max-width: 600px;
+        }
+        
+        .error-code {
+            font-size: clamp(6rem, 12vw, 10rem);
+            font-weight: 800;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+            margin-bottom: 1rem;
+            text-shadow: 0 0 30px rgba(0, 255, 136, 0.3);
+        }
+        
+        .error-title {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 700;
+            color: var(--text-white);
+            margin-bottom: 1rem;
+        }
+        
+        .error-description {
+            font-size: 1.25rem;
+            color: var(--text-light);
+            margin-bottom: 3rem;
+            line-height: 1.6;
+        }
+        
+        .error-actions {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .floating-404 {
+            position: absolute;
+            top: 20%;
+            right: 10%;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, rgba(0, 255, 136, 0.1), rgba(0, 217, 255, 0.1));
+            animation: float 6s ease-in-out infinite;
+            filter: blur(2px);
+        }
+        
+        .floating-404-2 {
+            position: absolute;
+            bottom: 30%;
+            left: 15%;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, rgba(0, 217, 255, 0.1), rgba(0, 255, 136, 0.1));
+            animation: float 6s ease-in-out infinite reverse;
+            filter: blur(2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="error-page">
+        <div class="floating-404"></div>
+        <div class="floating-404-2"></div>
+        
+        <div class="error-content">
+            <div class="error-code">404</div>
+            <h1 class="error-title">Page Not Found</h1>
+            <p class="error-description">
+                The page you're looking for doesn't exist or has been moved. 
+                Let's get you back to exploring the future of Neo blockchain infrastructure.
+            </p>
+            
+            <div class="error-actions">
+                <a href="/" class="btn btn-primary">
+                    <i data-feather="home"></i>
+                    Back to Home
+                </a>
+                <a href="#projects" class="btn btn-secondary">
+                    <i data-feather="folder"></i>
+                    View Projects
+                </a>
+                <a href="https://github.com/r3e-network" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+                    <i data-feather="github"></i>
+                    GitHub
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        // Initialize Feather Icons
+        feather.replace();
+        
+        // Simple analytics for 404 tracking
+        if (typeof gtag !== 'undefined') {
+            gtag('event', 'page_view', {
+                page_title: '404 - Page Not Found',
+                page_location: window.location.href
+            });
+        }
+    </script>
+</body>
+</html> 

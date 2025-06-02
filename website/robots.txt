@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://r3e.network/sitemap.xml
+
+# Allow all search engines to crawl the site
+# Crawl-delay: 1
+
+# Specific rules for different bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Block any unwanted crawlers (none currently)
+# User-agent: BadBot
+# Disallow: / 
