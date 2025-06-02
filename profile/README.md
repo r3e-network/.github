@@ -1,6 +1,6 @@
 # R3E Labs 🚀
 
-*The AI and ZKP powered Neo N3 service layer*
+[*The AI and ZKP powered Neo N3 service layer*](https://r3e-network.netlify.app)
 
 <div align="center">
 
