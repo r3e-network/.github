@@ -90,7 +90,7 @@ Our **7-project portfolio** provides complete coverage from low-level infrastruc
 
 - **Purpose**: Comprehensive secure services using Intel SGX with Occlum LibOS
 - **Target Users**: DeFi protocols, enterprise applications, regulatory compliance
-- **Key Features**: 15+ secure services, TEE security, AI-powered capabilities
+- **Key Features**: 17+ secure services, TEE security, AI-powered capabilities
 - **Technology Stack**: C#, Intel SGX, Occlum LibOS, Cryptographic proofs
 - **Repository**: `neo-service-layer`
 
@@ -253,4 +253,4 @@ r3e-network/
 - **Rust Node**: 5,000+ TPS, <100ms block validation  
 - **MCP Server**: 34 tools, 9 resources
 - **OpenR3E Libraries**: 50% gas reduction, 95% test coverage
-- **Service Layer**: 15+ secure services with TEE 
+- **Service Layer**: 17+ secure services with TEE 

@@ -107,23 +107,26 @@ The backbone of secure blockchain infrastructure, providing critical services wi
 
 | Service | Purpose | Use Cases |
 |---------|---------|-----------|
-| **🎲 Randomness Service** | Verifiable random number generation | Gaming, lotteries, fair distribution |
-| **🌐 Oracle Service** | External data delivery with proofs | Price feeds, weather data, sports results |
-| **📊 Data Feeds Service** | Decentralized market data | DeFi protocols, trading algorithms |
-| **🔑 Key Management Service** | Secure cryptographic operations | Multi-sig wallets, enterprise security |
-| **⚙️ Compute Service** | Secure JavaScript execution | Private computations, confidential data processing |
-| **💾 Storage Service** | Encrypted data management | Document storage, backup systems |
-| **✅ Compliance Service** | Regulatory verification | KYC/AML, transaction monitoring |
-| **📡 Event Subscription** | Blockchain monitoring | Real-time notifications, automation triggers |
+| **🎲 NeoRand** | Verifiable random number generation | Gaming, lotteries, fair distribution |
+| **🌐 NeoOracle** | External data delivery with proofs | Price feeds, weather data, sports results |
+| **📊 NeoFeeds** | Decentralized market data | DeFi protocols, trading algorithms |
+| **🔑 NeoVault** | Secure cryptographic operations | Multi-sig wallets, enterprise security |
+| **⚙️ NeoCompute** | Secure JavaScript execution | Private computations, confidential data processing |
+| **🔄 NeoFlow** | Automated smart contract execution | Event-driven workflows, conditional triggers, batch operations |
+| **💾 NeoStore** | Encrypted data management | Document storage, backup systems |
+| **✅ NeoCompliance** | Regulatory verification | KYC/AML, transaction monitoring |
+| **📡 NeoWatch** | Blockchain monitoring | Real-time notifications, automation triggers |
+| **🔐 NeoAuth** | OAuth & social recovery | Social login, zkEmail, private key recovery |
 
 #### 🧠 **Advanced AI-Powered Services**
 
 | Service | Capability | Innovation |
 |---------|------------|------------|
-| **🔮 Prediction Service** | AI-powered forecasting | Market prediction, risk assessment |
-| **🕵️ Pattern Recognition** | Fraud detection & analysis | Security monitoring, behavioral analysis |
-| **⚖️ Fair Ordering Service** | MEV protection | DEX protection, fair transaction ordering |
-| **🛡️ Zero-Knowledge Service** | Privacy computations | Private voting, confidential transactions |
+| **🤖 NeoMind** | Confidential AI computation | Privacy-preserving ML, HIPAA compliance |
+| **🔮 NeoForecast** | AI-powered forecasting | Market prediction, risk assessment |
+| **🕵️ NeoDetect** | Fraud detection & analysis | Security monitoring, behavioral analysis |
+| **⚖️ NeoFair** | MEV protection | DEX protection, fair transaction ordering |
+| **🛡️ NeoPrivacy** | Zero-knowledge computations | Private voting, confidential transactions |
 
 *Perfect for: DeFi protocols, enterprise blockchain applications, regulatory compliance, advanced trading systems*
 
